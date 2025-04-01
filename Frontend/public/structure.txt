@@ -1,0 +1,11 @@
+src structure
+src/
+├── components/
+│   ├── HotelCard.js
+│   ├── HotelDetail.js
+│   ├── BookingForm.js
+│   └── Navbar.js
+├── data/
+│   └── hotels.js
+├── App.js
+└── index.js
