@@ -1,0 +1,144 @@
+/* Hotel Listings Container */
+.hotel-listings {
+  padding: 2rem;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.hotel-listings-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ff5a5f;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+/* Hotel Card */
+.hotel-card {
+  background-color: #242424;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  border-color: #ff5a5f;
+}
+
+/* Card Header */
+.hotel-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.hotel-info {
+  flex: 1;
+}
+
+.hotel-name {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #e0e0e0;
+}
+
+.hotel-rating-container {
+  color: #a0a0a0;
+}
+
+.hotel-rating {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.hotel-image {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-left: 1.5rem;
+}
+
+/* Hotel Details */
+.hotel-location {
+  color: #a0a0a0;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Card Footer */
+.hotel-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff5a5f;
+}
+
+.price-per-night {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  font-weight: normal;
+}
+
+.view-details-btn {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #e04a50;
+  transform: translateY(-2px);
+}
+
+/* No Results Message */
+.no-results {
+  text-align: center;
+  color: #a0a0a0;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hotel-listings {
+    padding: 1rem;
+  }
+
+  .hotel-card-header {
+    flex-direction: column;
+  }
+
+  .hotel-image {
+    width: 100%;
+    height: 180px;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .hotel-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-details-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
